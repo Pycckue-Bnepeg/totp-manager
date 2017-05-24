@@ -11,7 +11,7 @@ fn main() {
     let yaml = load_yaml!("../settings.yml");
     let matches = App::from_yaml(yaml).get_matches();
     
-    if let Some(new) = matches.subcommand_matches("new") {
+    if let Some(new) = matches.subcommand_matches("add") {
         let name = new.value_of("name").unwrap();
         let secret = new.value_of("secret").unwrap();
         
