@@ -1,0 +1,12 @@
+[package]
+name = "auth-rs"
+version = "0.1.0"
+authors = [" <zottce@gmail.com>"]
+
+[dependencies]
+toml = "*"
+libreauth = "*"
+
+[dependencies.clap]
+version = "*"
+features = ["yaml"]

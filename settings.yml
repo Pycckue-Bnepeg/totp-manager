@@ -1,0 +1,20 @@
+name: "TOTP holder"
+version: "0.0.1"
+subcommands:
+    - add:
+        about: "Save new secret key with given name"
+        args:
+            - name:
+                required: true
+                index: 1
+            - secret:
+                required: true
+                index: 2
+    - get:
+        about: "Get code by name"
+        args:
+            - name:
+                required: true
+                index: 1
+    - show:
+        about: "Show all codes"
